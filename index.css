@@ -1,0 +1,40 @@
+* {
+    font-family: "Consolas", serif;
+    background-color: #282C34;
+}
+
+.firstTitle{
+    color: red;
+}
+
+.link{
+    border-style: dashed;
+    border-color: cornflowerblue;
+    font-style: italic;
+    font-size: 20px;
+    color: aqua;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.link:hover {
+    border-style: solid;
+    font-size: 40px;
+}
+
+.navbar{
+    display: flex;
+    background-color:#21252B;
+    padding: 0px;
+    margin: 0px;
+}
+
+li a {
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+li a:hover{
+    background-color: rgb(29, 29, 29);
+}
