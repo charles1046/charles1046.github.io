@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>猜數字</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>猜數字！</h1>
+
+    <p>猜猜看從 1 到 100 的數字，我會告訴你太高或太低。</p>
+    <p>你有 10 次機會。</p>
+
+    <div class="form">
+      <label for="guessField">猜一個數字：</label>
+      <input type="text" id="guessField" class="guessField" />
+      <input
+        type="submit"
+        id="guessSubmit"
+        value="Guess"
+        class="guessSubmit"
+        onclick="checkGuess()"
+      />
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="i18n/zh_tw.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

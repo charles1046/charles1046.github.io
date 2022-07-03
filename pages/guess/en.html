@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Guess!</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Guess!</h1>
+
+    <p>
+      Guess the numbers from 1 to 100, I'll tell you it's too high or too low.
+      You have 10 chances.
+    </p>
+
+    <div class="form">
+      <label for="guessField">Your guess:</label>
+      <input type="text" id="guessField" class="guessField" />
+      <input
+        type="submit"
+        id="guessSubmit"
+        value="Guess"
+        class="guessSubmit"
+        onclick="checkGuess()"
+      />
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="i18n/en.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
